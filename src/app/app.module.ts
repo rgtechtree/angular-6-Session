@@ -13,7 +13,7 @@ import { DataServerComponent } from './data-server/data-server.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './service/data.service';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +28,7 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],

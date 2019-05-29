@@ -5,6 +5,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { ConditionalComponent } from './conditional/conditional.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { DataServerComponent } from './data-server/data-server.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'dataServer',
     component: DataServerComponent
+  },
+  {
+    path: 'templatedriven',
+    component: TemplateDrivenComponent
   }
 ];
 
