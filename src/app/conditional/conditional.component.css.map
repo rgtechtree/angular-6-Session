@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,MAAM,EAAE,QAAQ;EAChB,UAAU,EAAE,yBAAyB;EACrC,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,SAAS;CACrB;;AAED,AAAA,EAAE,GAAC,EAAE,CAAA;EAAC,aAAa,EAAE,IAAI;CAAE;;AAC3B,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,IAAI;EAAC,UAAU,EAAE,IAAI;EAAC,aAAa,EAAE,GAAG;CACpD",
+    "sources": [
+        "conditional.component.scss"
+    ],
+    "names": [],
+    "file": "conditional.component.css"
+}

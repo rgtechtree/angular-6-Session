@@ -1,0 +1,17 @@
+<div class="caption">
+  <div>
+    <ul>
+      <li>String Type==> {{ description }}</li>
+      <li>Flag Type ==> {{ flag }}</li>
+      <li>Number Type ==> {{ num }}</li>
+      <li> Simple Object {{ obj | json }}</li>
+      <li>{{ colors | json }} <br> <button class="btn btn-primary" (click)="addNewColor()">Add Color</button></li>
+    </ul>
+  </div>
+
+  <div>
+    <pre>
+    {{userData | json}}
+  </pre>
+  </div>
+</div>

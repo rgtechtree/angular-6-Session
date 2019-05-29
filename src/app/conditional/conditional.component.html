@@ -1,0 +1,59 @@
+<div class="caption">
+  <h4>ngif and ngSwitch</h4>
+  <button class="btn btn-primary" (click)="toggle()">{{ flag1 ? 'Hide' : 'Show' }}</button>
+
+  <p *ngIf="flag1" style="margin-top: 0px; padding-left: 0px" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Architecto, ratione! Tempore laudantium perspiciatis,
+    quisquam molestias eos temporibus? Quaerat ipsum dolore
+    animi neque natus sequi laudantium, modi provident, excepturi c
+    umque eligendi. ratione! Tempore laudantium perspiciatis,
+    quisquam molestias eos temporibus? Quaerat ipsum dolore
+    animi neque natus sequi laudantium, modi provident, excepturi c
+    umque eligendi.</p>
+  <hr>
+  <h2>ngIf</h2>
+  <span style="display: block"> Stage is ==>{{stage}}</span>
+  <button class="btn btn-dark" (click)="stage=stage + 1" style="margin-right: 10px;margin-top: 10px">+</button>
+  <button class="btn btn-dark" (click)=" stage=stage - 1" style="margin-right: 10px; margin-top: 10px">-</button>
+
+  
+  <!-- ng-if -->
+  <p class="bg-primary text-white"  *ngIf="stage === 1">
+    Stage is Primary {{stage}}
+  </p>
+  <!-- ng-if -->
+  <p class="bg-success text-white"  *ngIf="stage === 2">
+    Stage is Success {{stage}}
+  </p>
+  <!-- else -->
+  <p class="bg-light "  *ngIf="stage !== 1 && stage !== 2">
+    Stage is Light {{stage}}
+  </p>
+
+  <hr>
+
+  <h4>ngSwitch</h4>
+
+  <div [ngSwitch]="stage">
+    Stage is ==> {{stage}}
+    <div *ngSwitchCase="1">
+      <p class="bg-success text-white" >
+        Stage is Success {{stage}}
+      </p>
+    </div>
+
+    <div *ngSwitchCase="2">
+      <p class="bg-primary text-white" >
+        Stage is Success {{stage}}
+      </p>
+    </div>
+    <div *ngSwitchDefault>
+      <p class="bg-light ">
+        Stage is Light {{stage}}
+      </p>
+    </div>
+
+
+  </div>
+
+</div>

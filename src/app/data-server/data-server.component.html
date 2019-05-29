@@ -1,0 +1,9 @@
+<div class="caption">
+  <button class="btn btn-primary" (click)="getDataFromServer()" >Get Data From Server</button>
+ <div *ngIf="userData" >
+   <hr>
+    <pre>
+        {{userData | json}}
+    </pre>
+ </div>
+</div>
